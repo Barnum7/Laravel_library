@@ -15,6 +15,14 @@ Route::get('/', function () {
     return "All books";
 });
 
+Route::get('books/{id}', function($id) {
+	return "Book #$id";
+});	
+
+Route::get('books/genres/{title}', function($title) {
+	return "Book $title";
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
